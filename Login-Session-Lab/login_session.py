@@ -26,7 +26,7 @@ def error():
 
 @app.route('/display')
 def display():
-	return render_template('display.html',q=login_sesion['quote'],a=login_sesion['author'],ag=login_sesion['age']) # What variables are needed?
+	return render_template('display.html',q=login_session['quote'],a=login_session['author'],ag=login_session['age']) # What variables are needed?
 
 
 @app.route('/thanks')
